@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/accent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".NFCDisplay">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:background="@color/accent"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:onClick="launchPayPalPayment"
+        android:id="@+id/button5"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView16" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:onClick="toMain"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@color/accent"
+        android:id="@+id/button6"
+        android:layout_alignTop="@+id/button5"
+        android:layout_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount:"
+        android:fontFamily="sans-serif"
+        android:textSize="35sp"
+        android:textColor="@color/text"
+        android:id="@+id/textView9"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$0.00"
+        android:fontFamily="sans-serif-light"
+        android:textSize="70sp"
+        android:textColor="@color/text"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PAYABLE TO:"
+        android:fontFamily="sans-serif-bold"
+        android:textSize="20sp"
+        android:textColor="@color/but"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="email"
+        android:fontFamily="sans-serif-bold"
+        android:textSize="20dp"
+        android:textColor="@color/but"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Description"
+        android:textColorHint="@color/text"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

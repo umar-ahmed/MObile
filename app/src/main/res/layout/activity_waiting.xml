@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/primaryblue">
+
+
+    <Button
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:id="@+id/button4"
+        android:background="@drawable/logo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Waiting for Tap"
+        android:textColor="@color/text"
+        android:fontFamily="sans-serif-light"
+        android:textSize="36sp"
+        android:id="@+id/textView18"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
